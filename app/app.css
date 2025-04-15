@@ -7,9 +7,13 @@
 
 html,
 body {
-  @apply bg-white dark:bg-gray-950;
-
+  @apply bg-white;
+  width: 100%;
+  height: fit-content;
   @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
+    color-scheme: white;
   }
+}
+main{
+  margin-top: 50px;
 }

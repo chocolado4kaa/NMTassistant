@@ -1,13 +1,17 @@
 import type { Route } from "./+types/home";
-import { Welcome } from "../welcome/welcome";
+import HeroSection from "~/src/Hero/HeroSection";
 
-export function meta({}: Route.MetaArgs) {
+export const meta = ({}: Route.MetaArgs) => {
   return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
+    { title: "Your personal NMT assistant" },
+    { name: "description", content: "Welcome!" },
   ];
 }
 
 export default function Home() {
-  return <Welcome />;
+  return(
+    <main>
+    <HeroSection />
+    </main>
+  )
 }
