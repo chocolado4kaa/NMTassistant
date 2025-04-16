@@ -7,8 +7,8 @@ const HeroSection = () => {
       <div className="container flex justify-between items-center">
         <div className="hero-text hero_half">
           <div className="container flex flex-col justify-start">
-            <h1></h1>
-            <p></p>
+            <h1>Make learning fun!</h1>
+            <p>Any subject, in any language, on any device, for all ages!</p>
             <Button className="Hero-button">Sign up for free</Button>
           </div>
         </div>

@@ -1,4 +1,5 @@
 .Hero-button {
+  margin-top: 70px;
   button {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
@@ -6,5 +7,32 @@
     font-size: 16px;
     width: 255px;
     height: 55px;
+  }
+}
+.hero-text{
+  width: 550px;
+  h1{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    line-height: 100px;
+    font-size: 74px;
+    text-align: left;
+    color: #2F281E;
+  }
+  p{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    line-height: 31px;
+    font-size: 24px;
+    text-align: left;
+    color: #544837;
+  }
+}
+
+.hero-img{
+  .image{
+    background: url("/public/Hero/Miroodles Color Composition.png");
   }
 }
