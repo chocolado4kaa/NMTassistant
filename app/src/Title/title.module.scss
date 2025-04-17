@@ -1,0 +1,22 @@
+.title {
+    margin: 50px 0;
+  h3 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    line-height: auto;
+    font-size: 36px;
+    text-align: center;
+    color: #2F281E;
+  }
+  &::before {
+    position: absolute;
+    content: " ";
+    bottom: -4px;
+    height: 8px;
+    width: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #3A5AFF;
+  }
+}

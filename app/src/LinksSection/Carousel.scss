@@ -1,0 +1,48 @@
+.carousel-section{
+  width: 100%;
+  overflow: hidden;
+
+}
+
+.carousel-container {
+  width: 600px;
+  overflow: visible;
+  position: relative;
+  margin: 40px auto;
+}
+
+.carousel-track {
+  display: flex;
+}
+
+.carousel-card {
+  width: 600px;
+  height: 300px;
+  margin-right: 30px;
+  background: linear-gradient(135deg, #333, #666);
+  border-radius: 20px;
+  flex-shrink: 0;
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  margin: 0 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: #4a6cf7;
+}

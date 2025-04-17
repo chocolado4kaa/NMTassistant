@@ -1,12 +1,7 @@
 .Hero-button {
   margin-top: 70px;
   button {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-size: 16px;
     width: 255px;
-    height: 55px;
   }
 }
 .hero-text{
@@ -33,6 +28,16 @@
 
 .hero-img{
   .image{
-    background: url("/public/Hero/Miroodles Color Composition.png");
+    background: url("/public/Hero/Miroodles Color Composition.png") no-repeat center center;
+    background-size: contain;
+  }
+}
+
+
+.hero {
+  justify-content: center;
+  max-width: 1600px;
+  .container{
+    width: 90%
   }
 }

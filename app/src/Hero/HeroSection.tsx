@@ -12,8 +12,8 @@ const HeroSection = () => {
             <Button className="Hero-button">Sign up for free</Button>
           </div>
         </div>
-        <div className="hero-img hero_half">
-          <div className="image"></div>
+        <div className="hero-img hero_half w-125 h-110">
+          <div className="image w-full h-full"></div>
         </div>
       </div>
     </section>
