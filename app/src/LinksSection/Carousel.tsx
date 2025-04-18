@@ -2,14 +2,37 @@ import React, { useEffect, useRef, useState } from "react";
 import "./Carousel.scss";
 
 const cards = [
-  { title: "Card 1", description: "Description 1" },
-  { title: "Card 2", description: "Description 2" },
-  { title: "Card 3", description: "Description 3" },
-  { title: "Card 4", description: "Description 4" },
+  { title: "Математика", description: "Допоможемо в підготовці до математики.", className: "math"},
+  { title: "Українська мова", description: "Повторимо весь курс української з нуля." , className: "ukraine"},
+  { title: "Історія України", description: "Пригадаємо найваливіші дати." , className: "history"},
+  { title: "Англійська мова", description: "Навчимо та допоможемо з англійською." , className: "english"},
 ];
 
+type CardProps = {
+  title?: string;
+  description?: string;
+  className?: string;
+  href?: string;
+};
+
+const Card: React.FC<CardProps> = ({ title, description, className = "", href = "#" }) => {
+  return (
+    <div className="carousel-card">
+      <div className={`${className} card-content w-full h-full flex relative`}>
+        <div className="card-text">
+          <h3>{title}</h3>
+          <p>{description}</p>
+        </div>
+        <div className="more">
+          <a href={href}>Learn more</a>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const Carousel: React.FC = () => {
-  const [currentIndex, setCurrentIndex] = useState(2); // починаємо з 1, бо перед ним буде клон останнього
+  const [currentIndex, setCurrentIndex] = useState(2);
   const [isTransitioning, setIsTransitioning] = useState(true);
   const trackRef = useRef<HTMLDivElement>(null);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
@@ -23,7 +46,6 @@ const Carousel: React.FC = () => {
     cards[0],
     cards[1],
   ];
-  
 
   useEffect(() => {
     startAutoScroll();
@@ -35,7 +57,10 @@ const Carousel: React.FC = () => {
       if (currentIndex === 0 || currentIndex === 1) {
         setIsTransitioning(false);
         setCurrentIndex(cards.length + 2);
-      } else if (currentIndex === cards.length + 2 || currentIndex === cards.length + 3) {
+      } else if (
+        currentIndex === cards.length + 2 ||
+        currentIndex === cards.length + 3
+      ) {
         setIsTransitioning(false);
         setCurrentIndex(2);
       }
@@ -67,7 +92,7 @@ const Carousel: React.FC = () => {
   const goToSlide = (index: number) => {
     stopAutoScroll();
     setIsTransitioning(true);
-    setCurrentIndex(index + 2); // зсув через клон спереду
+    setCurrentIndex(index + 2);
     startAutoScroll();
   };
 
@@ -75,7 +100,6 @@ const Carousel: React.FC = () => {
 
   return (
     <section className="carousel-section">
-
       <div className="carousel-container">
         <div
           className="carousel-track"
@@ -86,10 +110,12 @@ const Carousel: React.FC = () => {
           }}
         >
           {fullCards.map((card, index) => (
-            <div className="carousel-card" key={index}>
-              <h3>{card.title}</h3>
-              <p>{card.description}</p>
-            </div>
+            <Card
+              title={card.title}
+              description={card.description}
+              className={card.className}
+              key={index}
+            />
           ))}
         </div>
 
@@ -103,7 +129,6 @@ const Carousel: React.FC = () => {
           ))}
         </div>
       </div>
-            
     </section>
   );
 };
