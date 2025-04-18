@@ -2,6 +2,7 @@ import type { Route } from "./+types/home";
 import HeroSection from "~/src/Hero/HeroSection";
 import Advantages from "~/src/Advantages/Advantages";
 import Carousel from "~/src/LinksSection/Carousel";
+import PreFooter from "~/src/PreFooter/PreFooter";
 
 export const meta = ({}: Route.MetaArgs) => {
   return [
@@ -16,6 +17,7 @@ export default function Home() {
     <HeroSection />
     <Advantages />
     <Carousel />
+    <PreFooter />
     </main>
   )
 }

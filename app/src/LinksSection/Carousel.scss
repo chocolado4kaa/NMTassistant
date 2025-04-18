@@ -7,7 +7,7 @@
   width: 600px;
   overflow: visible;
   position: relative;
-  margin: 40px auto;
+  margin: 40px auto 0;
 }
 
 .carousel-track {
@@ -55,8 +55,10 @@
       height: 100%;
       border-radius: 20px;
       background-size: contain !important;
+      z-index: -1;
     }
     &.math {
+      color: white;
       &::before {
         width: 600px;
         height: 600px;
@@ -77,13 +79,90 @@
       }
     }
     &.ukraine {
-      background: url("/subjects/Bg_image.png") no-repeat center center;
+      &::before {
+        background: #3a5bff83;
+        transform: rotate(45deg);
+        width: 500px;
+        height: 500px;
+        left: -200px;
+        top: -100px;
+      }
+      &::after {
+        background: url("/subjects/Bg_image.png") no-repeat top center;
+        background-size: 100% auto !important;
+        transform: scaleX(-1);
+        z-index: -2;
+      }
     }
     &.history {
-      background: url("/subjects/history.jpg") no-repeat center center;
+      color: white;
+      &::before {
+        width: 65%;
+        background-color: #2f281e;
+        border-radius: 0px;
+      }
+      &::after {
+        background: url("/subjects/history.png") no-repeat left center;
+        z-index: -2;
+        transform: scale(1.1);
+      }
     }
     &.english {
-      background: url("/subjects/english.png") no-repeat center center;
+      background: #112230;
+      color: white;
+      &::before {
+        width: 70%;
+        transform: rotate(15deg);
+        background: #75313cde;
+        left: -50px;
+        height: 500px;
+        top: -100px;
+      }
+      &::after {
+        z-index: -2;
+        background: url("/subjects/english.png") repeat center center;
+        width: 800px;
+        height: 300px;
+        transform: rotate(-45deg);
+        right: -300px;
+        left: auto;
+      }
+    }
+  }
+}
+
+.carousel-card {
+  .card-text {
+    padding-left: 30px;
+    width: 270px;
+    margin: 0 0 20px;
+    h3 {
+      font-family: "Montserrat", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 800;
+      font-style: normal;
+      line-height: 36px;
+      font-size: 36px;
+      margin-bottom: 15px;
+    }
+    p {
+      font-family: "Montserrat", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 300;
+      font-style: normal;
+      line-height: auto;
+      font-size: 20px;
+    }
+  }
+  .more{
+    padding-left: 30px;
+    a {
+      font-family: "Montserrat", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 700;
+      font-style: normal;
+      line-height: auto;
+      font-size: 20px;
     }
   }
 }
