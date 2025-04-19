@@ -3,10 +3,26 @@ import "./Carousel.scss";
 import Title from "../Title/Title";
 
 const cards = [
-  { title: "Математика", description: "Допомога в підготовці до математики.", className: "math"},
-  { title: "Українська мова", description: "Повтор всього курсу української мови." , className: "ukraine"},
-  { title: "Історія України", description: "Пригадай найваливіші дати країни." , className: "history"},
-  { title: "Англійська мова", description: "підготуйся до НМТ з іноземної" , className: "english"},
+  {
+    title: "Математика",
+    description: "Допомога в підготовці до математики.",
+    className: "math",
+  },
+  {
+    title: "Українська мова",
+    description: "Повтор всього курсу української мови.",
+    className: "ukraine",
+  },
+  {
+    title: "Історія України",
+    description: "Пригадай найваливіші дати країни.",
+    className: "history",
+  },
+  {
+    title: "Англійська мова",
+    description: "підготуйся до НМТ з іноземної",
+    className: "english",
+  },
 ];
 
 type CardProps = {
@@ -16,10 +32,17 @@ type CardProps = {
   href?: string;
 };
 
-const Card: React.FC<CardProps> = ({ title, description, className = "", href = "#" }) => {
+const Card: React.FC<CardProps> = ({
+  title,
+  description,
+  className = "",
+  href = "#",
+}) => {
   return (
     <div className="carousel-card">
-      <div className={`${className} card-content w-full h-full flex relative flex-col justify-center`}>
+      <div
+        className={`${className} card-content w-full h-full flex relative flex-col justify-center`}
+      >
         <div className="card-text">
           <h3>{title}</h3>
           <p>{description}</p>

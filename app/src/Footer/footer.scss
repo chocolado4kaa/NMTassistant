@@ -1,0 +1,96 @@
+footer.main-footer {
+  background: #3a5aff;
+  .footer-container {
+    margin-bottom: 40px;
+    .logo-container {
+      display: flex;
+      .logo {
+        background: url("/Logo_white.svg") no-repeat center center;
+        background-size: contain;
+      }
+      .title {
+        font-family: "Vibur", cursive;
+        font-weight: 400;
+        font-style: normal;
+        color: #fff;
+      }
+    }
+    .footer-wrap {
+      .column {
+        margin: 0 0 0 20px;
+        h5 {
+          font-family: "Montserrat", sans-serif;
+          font-optical-sizing: auto;
+          font-weight: 600;
+          line-height: 30px;
+          font-size: 20px;
+          text-align: left;
+          color: #fff;
+        }
+      }
+      .rows {
+        a {
+          font-family: "Montserrat", sans-serif;
+          font-optical-sizing: auto;
+          font-weight: 400;
+          line-height: 35px;
+          font-size: 16px;
+          text-align: left;
+          color: #fff;
+          transition: all 0.3s;
+          &:hover{
+            color: #FFC43B;
+            letter-spacing: 1px;
+          }
+        }
+      }
+    }
+    .follow {
+        margin-top: 40px;
+      p {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 16px;
+        line-height: auto;
+        color: #fff;
+      }
+      .media-links {
+        margin-top: 15px;
+        a.media {
+          height: 30px;
+          width: 30px;
+          border-radius: 50%;
+          transition: all 0.3s;
+          &:hover{
+            transform: scale(1.2);
+            border-radius: 25%;
+          }
+          &.facebook{
+            background: #fff url("/media/facebook.svg") no-repeat center center;
+          }
+          &.twitter{
+            background: #fff url("/media/twitter.svg") no-repeat center center;
+          }
+          &.linked{
+            background: #fff url("/media/linkedin.svg") no-repeat center center;
+          }
+          &.tiktok{
+            background: #fff url("/media/tiktok.svg") no-repeat center center;
+          }
+        }
+      }
+    }
+    .bottom{
+        p{
+            font-family: "Montserrat", sans-serif;
+          font-optical-sizing: auto;
+          font-weight: 400;
+          line-height: auto;
+          font-size: 12px;
+          text-align: left;
+          color: #fff;
+        }
+    }
+  }
+}
