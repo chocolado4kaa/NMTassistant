@@ -26,19 +26,25 @@
     color: #544837;
   }
 }
-
 .hero-img{
   .image{
     background: url("/public/Hero/Miroodles Color Composition.png") no-repeat center center;
     background-size: contain;
   }
 }
-
-
 .hero {
   justify-content: center;
   max-width: 1600px;
   .container{
     width: 90%
+  }
+}
+
+.aboutUs{
+  .hero-img{
+    .image{
+      background: url("/public/Hero/Miroodles - Color Comp.png") no-repeat center center;
+      background-size: contain;
+    }
   }
 }

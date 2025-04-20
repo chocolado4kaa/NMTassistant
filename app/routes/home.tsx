@@ -8,7 +8,7 @@ import Footer from "~/src/Footer/Footer";
 export const meta = ({}: Route.MetaArgs) => {
   return [
     { title: "Your personal NMT assistant" },
-    { name: "description", content: "Welcome!" },
+    { name: "index", content: "Welcome!" },
   ];
 }
 

@@ -16,10 +16,10 @@ const Footer = () => {
               <div className="follow flex flex-col">
                 <p>Follow us:</p>
                 <div className="media-links flex w-full">
-                  {media.map((link) => (
+                  {media.map((link, index) => (
                     <a
                       href={link.href}
-                      key={link.className}
+                      key={index}
                       className={`media ${link.className} mr-5`}
                     ></a>
                   ))}

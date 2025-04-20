@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./header.scss";
+import { Link } from "react-router";
 
 const Header = () => {
   const [isMenu, setMenu] = useState(false);
@@ -8,12 +9,12 @@ const Header = () => {
   };
 
   return (
-    <header className="h-20 mt-10 sticky flex flex-col">
+    <header className="h-25 mt-10 sticky flex flex-col">
       <div className="container flex justify-between items-center">
-        <div className="header_part flex">
+        <Link to="/" className="header_part flex">
           <div className="logo h-12 w-12"></div>
           <span className="title text-5xl ml-5 h-12 mt-2">nmt assistant</span>
-        </div>
+        </Link>
         <div className="header_part flex">
           <button
             className={`burger w-12 h-12 ${!isMenu ? `open` : `close`}`}
@@ -21,12 +22,12 @@ const Header = () => {
           ></button>
         </div>
       </div>
-      <div className={`container menu ${isMenu ? `opened` : `closed`}`}>
-        <nav>
-          <a href="#">about us</a>
-          <a href="#">subjects</a>
-          <a href="#">links</a>
-          <a href="#">...</a>
+      <div className={`container menu w-full flex mt-3 ${isMenu ? `opened` : `closed`}`}>
+        <nav className="flex container w-full justify-evenly">
+          <Link to="/about-us">about us</Link>
+          <Link to="#">subjects</Link>
+          <Link to="#">links</Link>
+          <Link to="#">...</Link>
         </nav>
       </div>
     </header>

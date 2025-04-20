@@ -1,15 +1,30 @@
 import "./Hero.scss";
 import Button from "../Button/Button";
+import type React from "react";
 
-const HeroSection = () => {
+type HeroProps = {
+  children?: React.ReactNode;
+  className?: string;
+};
+
+const HeroSection: React.FC<HeroProps> = ({ children, className }) => {
   return (
-    <section className="hero container flex w-full">
+    <section className={`hero container flex w-full ${className}`}>
       <div className="container flex justify-between items-center">
         <div className="hero-text hero_half">
           <div className="container flex flex-col justify-start">
-            <h1>Підготовка може бути зручною!</h1>
-            <p>Будь-яка тема, будь-якою мовою, на будь-якому пристрої, для будь-якого віку!</p>
-            <Button className="Hero-button">дізнатись більше</Button>
+            {children ? (
+              children
+            ) : (
+              <>
+                <h1>Підготовка може бути зручною!</h1>
+                <p>
+                  Будь-яка тема, будь-якою мовою, на будь-якому пристрої, для
+                  будь-якого віку!
+                </p>
+                <Button className="Hero-button">дізнатись більше</Button>
+              </>
+            )}
           </div>
         </div>
         <div className="hero-img hero_half w-125 h-110">
