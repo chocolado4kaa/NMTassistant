@@ -10,7 +10,7 @@ export const meta = ({}: Route.MetaArgs) => {
     ];
   }
   
-  export default function Home() {
+  export default function AboutUs_page() {
     return(
       <main>
       <HeroSection className="aboutUs">

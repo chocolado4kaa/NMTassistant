@@ -25,7 +25,7 @@ const Header = () => {
       <div className={`container menu w-full flex mt-3 ${isMenu ? `opened` : `closed`}`}>
         <nav className="flex container w-full justify-evenly">
           <Link to="/about-us">about us</Link>
-          <Link to="#">subjects</Link>
+          <Link to="/subjects">subjects</Link>
           <Link to="#">links</Link>
           <Link to="#">...</Link>
         </nav>
