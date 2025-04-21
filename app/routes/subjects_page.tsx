@@ -2,6 +2,7 @@ import type { Route } from "./+types/home";
 import HeroSection from "~/src/Hero/HeroSection";
 import Footer from "~/src/Footer/Footer";
 import Subjects from "~/src/Subjects/Subjects";
+import TitleSection from "~/src/Title/TitleSection";
 
 export const meta = ({}: Route.MetaArgs) => {
   return [
@@ -13,9 +14,7 @@ export const meta = ({}: Route.MetaArgs) => {
 export default function Subjects_page() {
   return (
     <main>
-      <HeroSection className="subjects">
-        <h1>Предмети</h1>
-      </HeroSection>
+      <TitleSection>Предмети</TitleSection>
       <Subjects />
       <Footer />
     </main>
