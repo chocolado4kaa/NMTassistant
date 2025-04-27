@@ -1,86 +1,58 @@
-# Welcome to React Router!
+# 🎓 React + TypeScript Проєкт
 
-A modern, production-ready template for building full-stack React applications using React Router.
+## Особливості
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
-
-## Features
-
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
+- 🚀 Рендерінг на стороні сервера
+- ⚡️ Гаряча заміна модулів (HMR)
+- 📦 Пакування та оптимізація активів
+- 🔄 Завантаження даних та мутації
+- 🔒 TypeScript за замовчуванням
+- 🎉 TailwindCSS для стилізації
 - 📖 [React Router docs](https://reactrouter.com/)
 
-## Getting Started
+## Початок роботи
 
-### Installation
+### Встановлення
 
-Install the dependencies:
+1. Встанови Node.js: https://nodejs.org  
 
+2. Встановіть залежності:
 ```bash
 npm install
 ```
 
-### Development
-
-Start the development server with HMR:
+3. Запусти проєкт:
 
 ```bash
 npm run dev
 ```
 
-Your application will be available at `http://localhost:5173`.
+(або `npm run start`, залежно від налаштувань)
 
-## Building for Production
+Вебсайт стане доступним за посиланням: `http://localhost:5173`.
 
-Create a production build:
+---
 
-```bash
-npm run build
-```
+## 🧭 Роутинг (React Router)
 
-## Deployment
+Сторінки підключені в `app/routes.ts`.  
+Кожна сторінка — це окремий файл у `app/routes/`.
 
-### Docker Deployment
+---
 
-To build and run using Docker:
+## 📁 Основні папки
 
-```bash
-docker build -t my-app .
+- `app/routes/` — сторінки
+- `app/src/` — UI-компоненти
+- `app/routes.ts` — конфігурація роутів
+- `app/root.tsx` — root layout / обгортка
+- `public/` — статичні файли (зображення і т.д.)
 
-# Run the container
-docker run -p 3000:3000 my-app
-```
-
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
+---
 
 ## Styling
 
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
+У проекті використовується [Tailwind CSS](https://tailwindcss.com/) та scss для стилізації. 
 
 ---
 
