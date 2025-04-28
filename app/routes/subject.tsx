@@ -4,7 +4,7 @@ import Carousel from "~/src/Carousel/Carousel";
 import Footer from "~/src/Footer/Footer";
 import Subject from "~/src/Subject/subj";
 import { subjectsData } from "~/src/Subject/subjectsData";
-import type { Route } from "./+types/home"; // щоб типи для meta
+import type { Route } from "./+types/home";
 
 export const meta = ({ params }: Route.MetaArgs) => {
   const subject = subjectsData[params.id as keyof typeof subjectsData];

@@ -1,52 +1,67 @@
+import Row from "../Row";
 import Title from "../Title/Title";
-import { additonalInfo } from "./additonalInfo";
+import AdditonalInfo from "./additonalInfo";
+import "./subj.scss"
 
 type SubjectProps = {
     name: string;
     description: string;
-    links: {
-      test: string;
-      materials: string;
-    };
+    img: string;
+    tests: {
+      link: string;
+      title: string;
+    }[];
+    materials: {
+      link: string;
+      title: string;
+    }[];
   };
   
-  export default function Subject({ name, description, links }: SubjectProps) {
+const Subject: React.FC<SubjectProps> = ({ name, description, img, tests, materials }) => {
     return (
-      <section className="bg-white py-12">
+      <section className="bg-white subject">
         <div className="container mx-auto px-4 flex flex-col items-center text-center">
-            
-  
-          {/* Title */}
-          <Title>{name}</Title>
-  
-          {/* Description */}
-          <p className="text-gray-600 max-w-2xl mb-8 leading-relaxed">
-            {description}
-          </p>
-
-        
-  
-          {/* Buttons */}
-          <div className="flex flex-wrap gap-6 justify-center">
-            <a
-              href={links.test}
-              className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-xl transition duration-300"
-            >
-              Перейти до тесту
-            </a>
-            <a
-              href={links.materials}
-              className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold py-3 px-6 rounded-xl transition duration-300"
-            >
-              Матеріали
-            </a>
-          </div>
+          <Row className="w-8/10! subj-info">
+            {{
+              left: (
+                <>
+                <Title></Title>
+                <p>{description}</p>
+                </>
+              ),
+              right: (
+                <>
+                <Title>Посилання</Title>
+                <ul>
+                  {tests.map((test, index) => (
+                    <li key={index}><a href={test.link} target="_blank">{test.title}</a></li>
+                  ))}
+                </ul>
+                </>
+              )
+            }}
+          </Row>
+          <Row className="w-8/10! materials">
+            {{
+              right: (
+                <img src={img}></img>
+              ),
+              left: (
+                <>
+                <Title>Матеріали</Title>
+                <ul>
+                  {materials.map((material, index) => (
+                    <li key={index}><a href={material.link} target="_blank">{material.title}</a></li>
+                  ))}
+                </ul>
+                </>
+              )
+            }}
+          </Row>
+          <AdditonalInfo />
         </div>
       </section>
     );
   }
-  
 
-  const description = () => {
-
-  }
+  export default Subject;

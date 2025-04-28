@@ -7,21 +7,25 @@ const cards = [
     title: "Математика",
     description: "Допомога в підготовці до математики.",
     className: "math",
+    href: "/subjects/math",
   },
   {
     title: "Українська мова",
     description: "Повтор всього курсу української мови.",
     className: "ukraine",
+    href: "/subjects/ukrainian",
   },
   {
     title: "Історія України",
     description: "Пригадай найваливіші дати країни.",
     className: "history",
+    href: "/subjects/history",
   },
   {
     title: "Англійська мова",
     description: "підготуйся до НМТ з іноземної",
     className: "english",
+    href: "/subjects/foreignLang",
   },
 ];
 
@@ -140,6 +144,7 @@ const Carousel: React.FC = () => {
               description={card.description}
               className={card.className}
               key={index}
+              href={card.href}
             />
           ))}
         </div>
