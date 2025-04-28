@@ -28,7 +28,7 @@
 }
 .hero-img{
   .image{
-    background: url("/public/Hero/Miroodles Color Composition.png") no-repeat center center;
+    background: url("/Hero/Miroodles Color Composition.png") no-repeat center center;
     background-size: contain;
   }
 }
@@ -43,8 +43,56 @@
 .aboutUs{
   .hero-img{
     .image{
-      background: url("/public/Hero/Miroodles - Color Comp.png") no-repeat center center;
+      background: url("/Hero/Miroodles - Color Comp.png") no-repeat center center;
       background-size: contain;
+    }
+  }
+}
+
+.math{
+  .hero-img{
+    .image{
+      background: url("/subjects/List/Tech Life - Life Management.png") no-repeat center center;
+    }
+  }
+}
+
+.ukrainian{
+  .hero-img{
+    .image{
+      background: url("/subjects/List/Open Doodles - Reading.png") no-repeat center center;
+    }
+  }
+}
+
+.history{
+  .hero-img{
+    .image{
+      background: url("/subjects/List/Open Doodles - Reflecting.png") no-repeat center center;
+    }
+  }
+}
+
+.foreignLang{
+  .hero-img{
+    .image{
+      background: url("/subjects/List/Stuck at Home - Working from Home.png") no-repeat center center;
+    }
+  }
+}
+
+.literature{
+  .hero-img{
+    .image{
+      background: url("/subjects/List/Brazuca - Standing.png") no-repeat center center;
+    }
+  }
+}
+
+.physics{
+  .hero-img{
+    .image{
+      background: url("/subjects/List/Stuck at Home - Happy Place.png") no-repeat center center;
     }
   }
 }

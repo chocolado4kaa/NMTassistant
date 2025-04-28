@@ -3,7 +3,7 @@ import "./footer.scss";
 const Footer = () => {
   return (
     <footer className="main-footer w-full h-125 flex ">
-      <div className="container footer-container flex h-80/100 w-8/10 flex-col m-auto justify-between">
+      <div className="container footer-container flex h-8/10 w-8/10 flex-col m-auto justify-between">
         <div className="container flex justify-between">
           <div className="footer-wrap flex w-full justify-between">
             <div className="left-part">
