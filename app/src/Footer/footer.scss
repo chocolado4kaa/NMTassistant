@@ -26,6 +26,7 @@ footer.main-footer {
           font-size: 20px;
           text-align: left;
           color: #fff;
+          height: 30px;
         }
       }
       .rows {
@@ -38,6 +39,7 @@ footer.main-footer {
           text-align: left;
           color: #fff;
           transition: all 0.3s;
+          text-wrap: nowrap;
           &:hover{
             color: #FFC43B;
             letter-spacing: 1px;

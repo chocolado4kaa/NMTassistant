@@ -7,10 +7,9 @@ const Rows = [
     left: <img src="/aboutUS/Miroodles Color Composition-1.png" />,
     right: (
       <>
-        <h5>Create</h5>
+        <h5>Обери предмет</h5>
         <p>
-          It only takes minutes to create a learning game or trivia quiz on any
-          topic, in any language.
+          Ми підготували тести, вебінари та конспекти з усіх основних предметів НМТ. Просто обери те, що потрібно саме тобі — і починай готуватись уже зараз.
         </p>
       </>
     ),
@@ -18,28 +17,27 @@ const Rows = [
   {
     left: (
       <>
-        <h5>Host or share</h5>
+        <h5>Проходь тести й тренування</h5>
         <p>
-          Host a live game with questions on a big screen or share a game with
-          remote players.
+          Виконуй завдання в зручному форматі, переглядай пояснення до складних тем та стеж за своїм прогресом. Готуватись можна будь-де й будь-коли.
         </p>
       </>
     ),
-    right: <img src="/aboutUS/Miroodles Color Composition-2.png"></img>,
+    right: <img src="/aboutUS/Miroodles Color Composition-2.png" />,
   },
   {
-    left: <img src="/aboutUS/Miroodles Color Composition.png"></img>,
+    left: <img src="/aboutUS/Miroodles Color Composition.png" />,
     right: (
       <>
-        <h5>Play</h5>
+        <h5>Покращуй результат</h5>
         <p>
-          Game on! Join a kahoot with a PIN provided by the host and answer
-          questions on your device.
+          Регулярна практика допоможе уникнути типових помилок і впевнено скласти НМТ. Ми покажемо, над чим ще варто попрацювати, щоб отримати свій максимум.
         </p>
       </>
     ),
   },
 ];
+
 
 const AboutUs = () => {
   return (

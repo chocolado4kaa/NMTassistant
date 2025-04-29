@@ -54,73 +54,73 @@ export default Footer;
 
 const cols = [
   {
-    title: "About",
+    title: "Про нас",
     rows: [
       {
-        text: "Company",
+        text: "Про платформу",
         href: "#",
       },
       {
-        text: "Leadership",
+        text: "Наша команда",
         href: "#",
       },
       {
-        text: "Press",
+        text: "Новини",
         href: "#",
       },
       {
-        text: "Investors",
+        text: "Контакти",
         href: "#",
       },
     ],
   },
   {
-    title: "Solutions",
+    title: "Рішення",
     rows: [
       {
-        text: "At School",
+        text: "Для учнів",
         href: "#",
       },
       {
-        text: "At Work",
+        text: "Для батьків",
         href: "#",
       },
       {
-        text: "At Home",
+        text: "Для викладачів",
         href: "#",
       },
     ],
   },
   {
-    title: "Resources",
+    title: "Ресурси",
     rows: [
       {
-        text: "Blog",
+        text: "Блог",
         href: "#",
       },
       {
-        text: "Library",
+        text: "Бібліотека матеріалів",
         href: "#",
       },
       {
-        text: "Help Center",
+        text: "Підтримка",
         href: "#",
       },
     ],
   },
   {
-    title: "Terms and conditions",
+    title: "Правила та умови",
     rows: [
       {
-        text: "Terms and Conditions",
+        text: "Умови користування",
         href: "#",
       },
       {
-        text: "Privacy Policy",
+        text: "Політика конфіденційності",
         href: "#",
       },
       {
-        text: "Children’s Privacy Policy",
+        text: "Політика для дітей",
         href: "#",
       },
     ],
@@ -145,3 +145,4 @@ const media = [
     href: "#",
   },
 ];
+

@@ -1,6 +1,7 @@
 import "./Hero.scss";
 import Button from "../Button/Button";
 import type React from "react";
+import { useNavigate } from "react-router";
 
 type HeroProps = {
   children?: React.ReactNode;
@@ -8,6 +9,7 @@ type HeroProps = {
 };
 
 const HeroSection: React.FC<HeroProps> = ({ children, className }) => {
+  const navigate = useNavigate();
   return (
     <section className={`hero container flex w-full ${className}`}>
       <div className="container flex justify-between items-center">
@@ -22,7 +24,7 @@ const HeroSection: React.FC<HeroProps> = ({ children, className }) => {
                   Будь-яка тема, будь-якою мовою, на будь-якому пристрої, для
                   будь-якого віку!
                 </p>
-                <Button className="Hero-button">дізнатись більше</Button>
+                <Button className="Hero-button" onClick={() => {navigate("/about-us")}}>дізнатись більше</Button>
               </>
             )}
           </div>

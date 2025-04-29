@@ -1,8 +1,10 @@
 import type React from "react";
 import "./prefooter.scss";
 import Button from "../Button/Button";
+import { useNavigate } from "react-router";
 
 const PreFooter = () => {
+  const navigate = useNavigate();
   return (
     <section className="prefooter flex w-full flex-col">
       <div className="top-row w-full flex">
@@ -17,8 +19,8 @@ const PreFooter = () => {
       <div className="bottom-hero container flex justify-evenly items-center w-9/10">
         <div className="imgblock"></div>
         <div className="textblock">
-          <h3>Ready for make learning fun!</h3>
-          <Button>Sign up for free</Button>
+          <h3>Готовий почати підготовку?</h3>
+          <Button onClick={() => {navigate("/subjects")}}>Почати безкоштовно</Button>
         </div>
       </div>
     </section>
@@ -37,7 +39,7 @@ const El: React.FC<ElProps> = ({ color, children }) => {
     <div className="element flex w-50 h-12">
       <div className="el-content flex">
         <div className={`${color} rect h-full`}></div>
-        <p>{children}</p>      
+        <p>{children}</p>
       </div>
     </div>
   );
@@ -46,18 +48,18 @@ const El: React.FC<ElProps> = ({ color, children }) => {
 const rows = [
   {
     color: "bg-blue-500",
-    text: "More than 50% of US teachers use Kurtis",
+    text: "Більше 50% учнів готуються онлайн",
   },
   {
     color: "bg-cyan-400",
-    text: "Players in more than 200 countries",
+    text: "Користувачі з усіх регіонів України",
   },
   {
     color: "bg-rose-500",
-    text: "Over 30 million public games available",
+    text: "Понад 100 годин безкоштовних матеріалів",
   },
   {
     color: "bg-yellow-400",
-    text: "97% of the Fortune 500 use Kurtis",
+    text: "Підходить для НМТ, ЗНО, ДПА та олімпіад",
   },
 ];

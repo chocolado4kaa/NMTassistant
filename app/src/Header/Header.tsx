@@ -11,7 +11,11 @@ const Header = () => {
   return (
     <header className="h-25 mt-10 sticky flex flex-col">
       <div className="container flex justify-between items-center">
-        <Link to="/" className="header_part flex">
+        <Link
+          to="/"
+          className="header_part flex"
+          onClick={() => setMenu(false)}
+        >
           <div className="logo h-12 w-12"></div>
           <span className="title text-5xl ml-5 h-12 mt-2">nmt assistant</span>
         </Link>
@@ -22,12 +26,21 @@ const Header = () => {
           ></button>
         </div>
       </div>
-      <div className={`container menu w-full flex mt-3 ${isMenu ? `opened` : `closed`}`}>
+      <div
+        className={`container menu w-full flex mt-3 ${
+          isMenu ? `opened` : `closed`
+        }`}
+      >
         <nav className="flex container w-full justify-evenly">
-          <Link to="/about-us">about us</Link>
-          <Link to="/subjects">subjects</Link>
-          <Link to="#">links</Link>
-          <Link to="#">...</Link>
+          <Link to="/about-us" onClick={() => setMenu(false)}>
+            Про нас
+          </Link>
+          <Link to="/subjects" onClick={() => setMenu(false)}>
+            Предмети
+          </Link>
+          <Link to="/links" onClick={() => setMenu(false)}>
+            Посилання
+          </Link>
         </nav>
       </div>
     </header>

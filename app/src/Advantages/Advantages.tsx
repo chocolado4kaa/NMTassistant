@@ -1,8 +1,10 @@
 import "./advantages.scss";
 import Button from "../Button/Button";
 import Title from "../Title/Title";
+import { useNavigate } from "react-router";
 
 const Advantages = () => {
+  const navigate = useNavigate();
   return (
     <section className="advantages flex w-full h-144">
       <div className="container h-full w-95/100">
@@ -20,7 +22,12 @@ const Advantages = () => {
             </ListElement>
           ))}
         </div>
-        <Button className="flex justify-center mt-12">SIGN UP NOW</Button>
+        <Button
+          className="flex justify-center mt-12"
+          onClick={() => navigate("/subjects")}
+        >
+          Почати зараз
+        </Button>
       </div>
     </section>
   );
@@ -56,7 +63,7 @@ const ListElement: React.FC<ElProps> = ({
         <p>{children}</p>
       </div>
       <div className="more">
-        <a href={href}>Learn more</a>
+        <a href={href}>Далі</a>
       </div>
     </div>
   );
@@ -64,31 +71,35 @@ const ListElement: React.FC<ElProps> = ({
 
 const data = [
   {
-    title: "At School",
-    href: "#",
+    title: "У школі",
+    href: "/about-us",
     iconHref: "/advantages/1st.svg",
-    children: "Engaging group and distance learning for teachers and students.",
+    children:
+      "Використовуйте тести та матеріали для роботи в класі чи на дистанції.",
     color: "bg-blue-500",
   },
   {
-    title: "At work",
-    href: "#",
+    title: "Самопідготовка",
+    href: "/about-us",
     iconHref: "/advantages/2nd.svg",
-    children: "For training, e-learning, interactive presentations and more.",
-    color: "bg-yellow-400"
+    children:
+      "Готуйся до НМТ у зручному темпі: розв’язуй тести, закріплюй теми.",
+    color: "bg-yellow-400",
   },
   {
-    title: "At home",
-    href: "#",
+    title: "Вдома",
+    href: "/about-us",
     iconHref: "/advantages/3rd.svg",
-    children: "Apps and games for family fun or home study.",
-    color: "bg-cyan-400"
+    children:
+      "Проходь тренування з будь-якого предмету прямо зі смартфона або комп’ютера.",
+    color: "bg-cyan-400",
   },
   {
-    title: "Learning apps",
-    href: "#",
+    title: "Швидкий доступ",
+    href: "/about-us",
     iconHref: "/advantages/4th.svg",
-    children: "Engage kids with the Kahoot! family of learning apps.",
+    children:
+      "Використовуйте платформу для швидкого доступу до тестів та матеріалів.",
     color: "bg-rose-500",
-  }
+  },
 ];

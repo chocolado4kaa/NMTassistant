@@ -1,9 +1,23 @@
-/**
- * links to useful materials,
- * such as:
- *  zno.osvita.ua 
- *  https://testportal.gov.ua/pidgotovka-do-nmt-2025/
- *  https://osvita.ua/test/training/
- *  https://www.youtube.com/@iLearnUA/playlists
- *  etc
- */
+import type { Route } from "./+types/home";
+import HeroSection from "~/src/Hero/HeroSection";
+import Footer from "~/src/Footer/Footer";
+import LinksSection from "~/src/Links/LinksSection";
+
+export const meta = ({}: Route.MetaArgs) => {
+    return [
+      { title: "NMT assistant --- links" },
+      { name: "links", content: "Welcome!" },
+    ];
+  }
+  
+  export default function Links_page() {
+    return(
+      <main>
+      <HeroSection className="no-bg">
+      <h1>Корисні посилання</h1>
+      </HeroSection>
+      <LinksSection />
+      <Footer />
+      </main>
+    )
+  }

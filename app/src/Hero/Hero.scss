@@ -4,19 +4,19 @@
     width: 255px;
   }
 }
-.hero-text{
+.hero-text {
   width: 550px;
-  h1{
+  h1 {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
     line-height: 85px;
     font-size: 74px;
     text-align: left;
-    color: #2F281E;
+    color: #2f281e;
     margin-bottom: 35px;
   }
-  p{
+  p {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
@@ -26,16 +26,25 @@
     color: #544837;
   }
 }
-.hero-img{
-  .image{
-    background: url("/Hero/Miroodles Color Composition.png") no-repeat center center;
+.hero-img {
+  .image {
+    background: url("/Hero/Miroodles Color Composition.png") no-repeat center
+      center;
     background-size: contain;
   }
 }
 .hero {
   justify-content: center;
   max-width: 1600px;
-  .container{
-    width: 90%
+  .container {
+    width: 90%;
+  }
+}
+
+.no-bg {
+  .hero-img {
+    .image {
+      background: none;
+    }
   }
 }
