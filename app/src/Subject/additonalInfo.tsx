@@ -1,6 +1,6 @@
 const AdditonalInfo = () => {
   return (
-    <div className="bg-gray-100 py-12 mt-12">
+    <div className="bg-gray-100 py-12 mt-12 additional">
       <div className="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
         <div>
           <h3 className="text-2xl font-bold text-gray-800 mb-4">

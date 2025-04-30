@@ -42,7 +42,7 @@ const Rows = [
 const AboutUs = () => {
   return (
     <section className="about-us flex container w-full flex-col">
-      <Title>How does Kurtis work?</Title>
+      <Title>Як це працює?</Title>
       <div className="flex container w-full m-auto flex-col">
         {Rows.map((row, index) => (
             <Row key={index}>

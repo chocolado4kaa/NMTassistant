@@ -8,7 +8,7 @@ const Advantages = () => {
   return (
     <section className="advantages flex w-full h-144">
       <div className="container h-full w-95/100">
-        <Title>Our Advantages</Title>
+        <Title>Наші переваги</Title>
         <div className="list w-full flex justify-evenly">
           {data.map((el, index) => (
             <ListElement
