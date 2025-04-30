@@ -54,22 +54,15 @@
 
 ---
 
-## Deployment
-Docker Deployment
+## Хостинг
+Хостинг за допомогою Docker
 
-To build and run using Docker:
+Для побудови та запуску додатку за допомогою Docker:
 
+1. Створіть Docker-образ:
 docker build -t my-app .
 
-# Run the container
+2.  Запустіть контейнер
 docker run -p 3000:3000 my-app
 
-The containerized application can be deployed to any platform that supports Docker, including:
-
-    AWS ECS
-    Google Cloud Run
-    Azure Container Apps
-    Digital Ocean App Platform
-    Fly.io
-    Railway
-
+Контейнеризований додаток можна захостить на будь-якій платформі, яка підтримує Docker. В проекті використовувався [Render.com ](https://render.com/).
