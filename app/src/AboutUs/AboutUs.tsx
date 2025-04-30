@@ -15,6 +15,7 @@ const Rows = [
     ),
   },
   {
+    fadein: "fade-in-right",
     left: (
       <>
         <h5>Проходь тести й тренування</h5>
@@ -45,7 +46,7 @@ const AboutUs = () => {
       <Title>Як це працює?</Title>
       <div className="flex container w-full m-auto flex-col">
         {Rows.map((row, index) => (
-            <Row key={index}>
+            <Row key={index} fadein={row.fadein ?? row.fadein}>
                 {{
                     left: row.left,
                     right: row.right,

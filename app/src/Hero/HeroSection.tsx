@@ -2,16 +2,19 @@ import "./Hero.scss";
 import Button from "../Button/Button";
 import type React from "react";
 import { useNavigate } from "react-router";
+import { useRevealOnScroll } from "../useReveal/useRevealOnScroll";
 
 type HeroProps = {
   children?: React.ReactNode;
   className?: string;
 };
 
-const HeroSection: React.FC<HeroProps> = ({ children, className }) => {
+const HeroSection: React.FC<HeroProps> = ({ children, className = "" }) => {
   const navigate = useNavigate();
+  const ref = useRevealOnScroll();
+
   return (
-    <section className={`hero container flex w-full ${className}`}>
+    <section className={`hero container flex w-full ${className} fade-in-up`} ref={ref}>
       <div className="container flex justify-between items-center">
         <div className="hero-text hero_half">
           <div className="container flex flex-col justify-start">

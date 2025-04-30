@@ -1,8 +1,10 @@
 import "./footer.scss";
+import { useRevealOnScroll } from "../useReveal/useRevealOnScroll";
 
 const Footer = () => {
+  const ref = useRevealOnScroll();
   return (
-    <footer className="main-footer w-full h-125 flex ">
+    <footer className="main-footer w-full h-125 flex fade-in-up" ref={ref}>
       <div className="container footer-container flex h-8/10 w-8/10 flex-col m-auto justify-between">
         <div className="container flex justify-between">
           <div className="footer-wrap flex w-full justify-between">

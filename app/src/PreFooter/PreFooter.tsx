@@ -2,11 +2,13 @@ import type React from "react";
 import "./prefooter.scss";
 import Button from "../Button/Button";
 import { useNavigate } from "react-router";
+import { useRevealOnScroll } from "../useReveal/useRevealOnScroll";
 
 const PreFooter = () => {
   const navigate = useNavigate();
+  const ref = useRevealOnScroll();
   return (
-    <section className="prefooter flex w-full flex-col">
+    <section className="prefooter flex w-full flex-col zoom-in" ref={ref}>
       <div className="top-row w-full flex">
         <div className="container flex justify-evenly">
           {rows.map((el, index) => (

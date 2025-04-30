@@ -2,11 +2,13 @@ import "./advantages.scss";
 import Button from "../Button/Button";
 import Title from "../Title/Title";
 import { useNavigate } from "react-router";
+import { useRevealOnScroll } from "../useReveal/useRevealOnScroll";
 
 const Advantages = () => {
   const navigate = useNavigate();
+  const ref = useRevealOnScroll();
   return (
-    <section className="advantages flex w-full h-144">
+    <section className="advantages flex w-full h-144 fade-in-right" ref={ref}>
       <div className="container h-full w-95/100">
         <Title>Наші переваги</Title>
         <div className="list w-full flex justify-evenly">

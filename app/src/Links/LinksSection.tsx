@@ -54,6 +54,7 @@ const LinksSection = () => {
             <Row
               key={index}
               className="items-center gap-8 flex-col md:flex-row"
+              fadein={index % 2 === 0 ? "fade-in-right" : "fade-in-left"}
             >
               {index % 2 === 0
                 ? { left: textBlock, right: imageBlock }
