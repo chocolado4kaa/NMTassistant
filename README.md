@@ -1,4 +1,4 @@
-# 🎓 React + TypeScript Проєкт
+# 🎓 React Router + TypeScript Проєкт !!!
 
 ## Особливості
 
@@ -17,15 +17,13 @@
 1. Встанови Node.js: https://nodejs.org  
 
 2. Встановіть залежності:
-```bash
-npm install
-```
+
+`npm install`
+
 
 3. Запусти проєкт:
 
-```bash
-npm run dev
-```
+`npm run dev` в терміналі VS Code
 
 (або `npm run start`, залежно від налаштувань)
 
