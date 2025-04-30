@@ -1,4 +1,4 @@
-# 🎓 React Router + TypeScript Проєкт !!!
+# 🎓 React Router + TypeScript
 
 ## Особливості
 
