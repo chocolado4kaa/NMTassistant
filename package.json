@@ -2,7 +2,7 @@
   "name": "nmtassistant",
   "private": true,
   "type": "module",
-  "homepage": "https://chocolado4kaa/NMTassistant",
+  "homepage": "https://chocolado4kaa/NMTassistant/",
   "scripts": {
     "build": "react-router build",
     "dev": "react-router dev",
