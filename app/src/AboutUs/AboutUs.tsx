@@ -4,7 +4,7 @@ import "./aboutUs.scss";
 
 const Rows = [
   {
-    left: <img src="/aboutUS/Miroodles Color Composition-1.png" />,
+    left: <img src="/NMTassistant/aboutUS/Miroodles Color Composition-1.png" />,
     right: (
       <>
         <h5>Обери предмет</h5>
@@ -24,10 +24,10 @@ const Rows = [
         </p>
       </>
     ),
-    right: <img src="/aboutUS/Miroodles Color Composition-2.png" />,
+    right: <img src="/NMTassistant/aboutUS/Miroodles Color Composition-2.png" />,
   },
   {
-    left: <img src="/aboutUS/Miroodles Color Composition.png" />,
+    left: <img src="/NMTassistant/aboutUS/Miroodles Color Composition.png" />,
     right: (
       <>
         <h5>Покращуй результат</h5>

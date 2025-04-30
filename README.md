@@ -54,4 +54,22 @@
 
 ---
 
-Built with ❤️ using React Router.
+## Deployment
+Docker Deployment
+
+To build and run using Docker:
+
+docker build -t my-app .
+
+# Run the container
+docker run -p 3000:3000 my-app
+
+The containerized application can be deployed to any platform that supports Docker, including:
+
+    AWS ECS
+    Google Cloud Run
+    Azure Container Apps
+    Digital Ocean App Platform
+    Fly.io
+    Railway
+

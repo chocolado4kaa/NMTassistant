@@ -75,7 +75,7 @@ const data = [
   {
     title: "У школі",
     href: "/about-us",
-    iconHref: "/advantages/1st.svg",
+    iconHref: "/NMTassistant/advantages/1st.svg",
     children:
       "Використовуйте тести та матеріали для роботи в класі чи на дистанції.",
     color: "bg-blue-500",
@@ -83,7 +83,7 @@ const data = [
   {
     title: "Самопідготовка",
     href: "/about-us",
-    iconHref: "/advantages/2nd.svg",
+    iconHref: "/NMTassistant/advantages/2nd.svg",
     children:
       "Готуйся до НМТ у зручному темпі: розв’язуй тести, закріплюй теми.",
     color: "bg-yellow-400",
@@ -91,7 +91,7 @@ const data = [
   {
     title: "Вдома",
     href: "/about-us",
-    iconHref: "/advantages/3rd.svg",
+    iconHref: "/NMTassistant/advantages/3rd.svg",
     children:
       "Проходь тренування з будь-якого предмету прямо зі смартфона або комп’ютера.",
     color: "bg-cyan-400",
@@ -99,7 +99,7 @@ const data = [
   {
     title: "Швидкий доступ",
     href: "/about-us",
-    iconHref: "/advantages/4th.svg",
+    iconHref: "/NMTassistant/advantages/4th.svg",
     children:
       "Використовуйте платформу для швидкого доступу до тестів та матеріалів.",
     color: "bg-rose-500",

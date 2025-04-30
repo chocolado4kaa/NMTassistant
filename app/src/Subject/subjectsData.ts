@@ -3,7 +3,7 @@ export const subjectsData = {
     name: "Математика",
     description:
       "Підготовка з математики допоможе впевнено проходити завдання на обчислення, логіку та аналіз даних. Ми розглянемо теми рівнянь, нерівностей, геометрії, комбінаторики та основ статистики. Через системну практику навчишся вирішувати завдання швидко й без помилок.",
-    img: "/subjects/List/Tech Life - Life Management.png",
+    img: "/NMTassistant/subjects/List/Tech Life - Life Management.png",
     tests: [
       {
         link: "https://zno.osvita.ua/mathematics/",
@@ -37,7 +37,7 @@ export const subjectsData = {
     name: "Українська мова",
     description:
       "Ми допоможемо закріпити знання орфографії, пунктуації, синтаксису та мовних норм. Короткі пояснення складних правил і практичні завдання допоможуть тобі грамотно та впевнено складати мовну частину НМТ.",
-    img: "/subjects/List/Open Doodles - Reading.png",
+    img: "/NMTassistant/subjects/List/Open Doodles - Reading.png",
     tests: [
       {
         link: "https://zno.osvita.ua/ukrainian/",
@@ -63,7 +63,7 @@ export const subjectsData = {
     name: "Історія України",
     description:
       "Разом розглянемо основні періоди історії України: від найдавніших часів до сучасності. Короткі конспекти, дати, постаті та події допоможуть швидко орієнтуватися у тестових завданнях і впевнено відповідати на питання.",
-    img: "/subjects/List/Open Doodles - Reflecting.png",
+    img: "/NMTassistant/subjects/List/Open Doodles - Reflecting.png",
     tests: [
       {
         link: "https://www.mathcorporation.com/quizzes/ukraine-history-nmt?year=all",
@@ -94,7 +94,7 @@ export const subjectsData = {
     name: "Іноземна мова",
     description:
       "Підготовка включає вправи на читання текстів, граматику, словниковий запас та логіку розуміння мови. Ми працюємо з англійською, німецькою, французькою та іспанською, щоб допомогти тобі скласти мовний тест на високі бали.",
-    img: "/subjects/List/Stuck at Home - Working from Home.png",
+    img: "/NMTassistant/subjects/List/Stuck at Home - Working from Home.png",
     tests: [
       {
         link: "https://zno.osvita.ua/english/",
@@ -136,7 +136,7 @@ export const subjectsData = {
     name: "Українська література",
     description:
       "Вивчення української літератури охоплює твори, авторів та літературні напрями. Ми допоможемо швидко запам'ятати ключову інформацію та краще зрозуміти художні особливості творів для успішного проходження тестування.",
-    img: "/subjects/List/Brazuca - Standing.png",
+    img: "/NMTassistant/subjects/List/Brazuca - Standing.png",
     tests: [
       {
         link: "https://naurok.com.ua/test/ukra-nska-literatura-nmt-2775989.html",
@@ -162,7 +162,7 @@ export const subjectsData = {
     name: "Фізика",
     description:
       "Пояснимо основні закони механіки, молекулярної фізики, електрики та оптики простими словами. Типові задачі з розв'язанням допоможуть краще закріпити знання і впевнено відповідати на тестові питання.",
-    img: "/subjects/List/Stuck at Home - Happy Place.png",
+    img: "/NMTassistant/subjects/List/Stuck at Home - Happy Place.png",
     tests: [
       {
         link: "https://www.mathcorporation.com/quizzes/physics-nmt",
